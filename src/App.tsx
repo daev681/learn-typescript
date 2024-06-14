@@ -1,34 +1,17 @@
 
 import './App.css';
-import { Greet } from "./components/Greet";
-import { Person } from "./components/Person";
-import { PersonList } from "./components/PersonList";
-import { Heading } from "./components/Heading";
-import { Oscar } from "./components/Oscar";
-import { Button } from "./components/Button";
+import { Greet } from "./components/example/typeScriptEx/Greet";
+import { Person } from "./components/example/typeScriptEx/Person";
+import { PersonList } from "./components/example/typeScriptEx/PersonList";
+import { Heading } from "./components/example/typeScriptEx/Heading";
+import { Oscar } from "./components/example/typeScriptEx/Oscar";
+import { Button } from "./components/example/typeScriptEx/Button";
+import TodoList from "./components/todo-reducer/TodoList";
 
 function App() {
-  const personName = {
-    first:'Bruce', 
-    last: 'Wayne' 
-  }
 
-  const nameList = [
-    { 
-      first: 'Bruce',
-      last: 'Wayne'
-    },
-    {
-      first: 'Clark',
-      last: 'Kent'
-    },
-    {
-      first: 'Princess',
-      last: 'Diana'
-    }
-  ]
   return <div className="App">
-
+    <TodoList/>
   </div>;
 }
 
